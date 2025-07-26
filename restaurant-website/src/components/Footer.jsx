@@ -58,9 +58,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-gray-300">
-              <p>(615) 555-HOT1</p>
+              <p>(530) 720-9699</p>
               <p>hello@goodfrickinhotchicken.com</p>
-              <p>123 Broadway<br />Nashville, TN 37203</p>
+              <p>952 Nord Avenue<br />Chico, CA 95926</p>
             </div>
           </div>
         </div>

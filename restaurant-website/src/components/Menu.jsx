@@ -1,77 +1,70 @@
 import { useState } from 'react'
 
 const Menu = () => {
-  const [activeCategory, setActiveCategory] = useState('sandwiches')
+  const [activeCategory, setActiveCategory] = useState('sliders')
 
   const menuData = {
-    sandwiches: [
+    sliders: [
       {
-        name: "Classic Hot Chicken Sandwich",
-        price: "$12.99",
-        description: "Nashville hot chicken breast, pickles, and mayo on a brioche bun",
-        spiceLevel: "🌶️🌶️",
+        name: "Single Slider",
+        price: "Market Price",
+        description: "Chicken slider with coleslaw, pickles, frickin sauce & fries",
+        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
         image: "https://images.unsplash.com/photo-1606755962773-d324e2e3f19c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
       },
       {
-        name: "Frickin' Inferno Sandwich",
-        price: "$14.99",
-        description: "Our hottest chicken with ghost pepper sauce, jalapeños, and pepper jack",
-        spiceLevel: "🌶️🌶️🌶️🌶️🌶️",
+        name: "Double Sliders",
+        price: "Market Price",
+        description: "Two chicken sliders with coleslaw, pickles, frickin sauce & fries",
+        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
         image: "https://images.unsplash.com/photo-1619740455993-32c5d5705dea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-      },
+      }
+    ],
+    tenders: [
       {
-        name: "Honey Hot Sandwich",
-        price: "$13.99",
-        description: "Sweet and spicy with our signature honey glaze and hot sauce",
-        spiceLevel: "🌶️🌶️🌶️",
+        name: "Single Tender",
+        price: "Market Price",
+        description: "Chicken tender with Texas bread coleslaw, pickles, frickin sauce & fries",
+        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
         image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-      }
-    ],
-    combos: [
-      {
-        name: "The Full Heat Combo",
-        price: "$18.99",
-        description: "Hot chicken sandwich, spicy fries, coleslaw, and a drink",
-        spiceLevel: "🌶️🌶️🌶️",
-        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
       },
       {
-        name: "Family Fire Pack",
-        price: "$45.99",
-        description: "4 hot chicken pieces, 2 sides, 4 biscuits, feeds 2-3 people",
-        spiceLevel: "🌶️🌶️",
-        image: "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        name: "Double Tenders",
+        price: "Market Price",
+        description: "Two chicken tenders with Texas bread coleslaw, pickles, frickin sauce",
+        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
+        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
       }
     ],
-    sides: [
+    specialties: [
       {
-        name: "Nashville Hot Fries",
-        price: "$5.99",
-        description: "Crispy fries tossed in our signature hot seasoning",
-        spiceLevel: "🌶️🌶️",
+        name: "Slider & Tender Combo",
+        price: "Market Price",
+        description: "Chicken slider & tender with Texas bread, coleslaw, pickles, frickin sauce & fries",
+        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
+        image: "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+      },
+      {
+        name: "Frickin Loaded Fries",
+        price: "Market Price",
+        description: "Two chopped tenders with fries, coleslaw & frickin sauce",
+        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
         image: "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
       },
       {
-        name: "Cooling Coleslaw",
-        price: "$4.99",
-        description: "Creamy coleslaw to cool down the heat",
-        spiceLevel: "",
+        name: "Rice Bowl",
+        price: "Market Price",
+        description: "Two chopped tenders with rice, coleslaw & frickin sauce",
+        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
         image: "https://images.unsplash.com/photo-1588566565463-180a5b2090d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-      },
-      {
-        name: "Buttermilk Biscuits",
-        price: "$3.99",
-        description: "Fluffy buttermilk biscuits with honey butter",
-        spiceLevel: "",
-        image: "https://images.unsplash.com/photo-1571066811602-716837d681de?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
       }
     ]
   }
 
   const categories = [
-    { id: 'sandwiches', name: 'Sandwiches', icon: '🥪' },
-    { id: 'combos', name: 'Combos', icon: '🍽️' },
-    { id: 'sides', name: 'Sides', icon: '🍟' }
+    { id: 'sliders', name: 'Sliders', icon: '🥪' },
+    { id: 'tenders', name: 'Tenders', icon: '🍗' },
+    { id: 'specialties', name: 'Specialties', icon: '🍽️' }
   ]
 
   return (

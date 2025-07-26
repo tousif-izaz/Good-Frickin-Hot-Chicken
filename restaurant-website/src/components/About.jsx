@@ -1,24 +1,4 @@
 const About = () => {
-  const teamMembers = [
-    {
-      name: "Chef Marcus Johnson",
-      role: "Founder & Head Chef",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      bio: "Born and raised in Nashville, Marcus brings authentic Southern flavors with a modern twist to every dish."
-    },
-    {
-      name: "Sarah Williams",
-      role: "Operations Manager",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      bio: "With 15 years in restaurant management, Sarah ensures every customer has an exceptional experience."
-    },
-    {
-      name: "Tony Rodriguez",
-      role: "Executive Chef",
-      image: "https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      bio: "Tony's passion for spice and flavor innovation keeps our menu exciting and our heat levels perfect."
-    }
-  ]
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -101,26 +81,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div>
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Meet Our Team</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-48 h-48 rounded-full mx-auto object-cover shadow-lg"
-                  />
-                </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h4>
-                <p className="text-red-600 font-semibold mb-4">{member.role}</p>
-                <p className="text-gray-600 leading-relaxed">{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Awards & Recognition */}
         <div className="mt-20 bg-red-50 rounded-2xl p-8 md:p-12">

@@ -21,7 +21,7 @@ const Hero = () => {
           Good Frickin' <span className="text-red-300">Hot Chicken</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Nashville's hottest chicken, served with attitude and flavor that'll blow your mind
+          Nashville-style hot chicken with frickin' amazing flavor that'll blow your mind
         </p>
         
         {/* CTA Buttons */}

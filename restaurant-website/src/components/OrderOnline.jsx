@@ -63,7 +63,7 @@ const OrderOnline = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300">
-              📞 Call to Order: (615) 555-HOT1
+              📞 Call to Order: (530) 720-9699
             </button>
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300">
               🛒 Order for Pickup

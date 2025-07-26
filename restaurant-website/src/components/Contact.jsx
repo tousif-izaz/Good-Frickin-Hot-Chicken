@@ -169,8 +169,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Phone</h4>
-                  <p className="text-gray-300">(615) 555-HOT1 (4681)</p>
-                  <p className="text-sm text-gray-400">Mon-Fri 9AM-6PM</p>
+                  <p className="text-gray-300">(530) 720-9699</p>
+                  <p className="text-sm text-gray-400">Call for hours & ordering</p>
                 </div>
               </div>
 
@@ -183,7 +183,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Email</h4>
-                  <p className="text-gray-300">hello@goodfrickinhotchicken.com</p>
+                  <p className="text-gray-300">goodfrickinhotchicken@gmail.com</p>
                   <p className="text-sm text-gray-400">We'll respond within 24 hours</p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Main Location</h4>
-                  <p className="text-gray-300">123 Broadway<br />Nashville, TN 37203</p>
+                  <p className="text-gray-300">952 Nord Avenue<br />Chico, CA 95926</p>
                 </div>
               </div>
             </div>

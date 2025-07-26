@@ -8,7 +8,7 @@ const StoreLocator = () => {
       id: 1,
       name: "Chico Nord Ave",
       address: "952 Nord avenue, chico 95926",
-      phone: "(615) 555-0123",
+      phone: "(530) 720-9699",
       hours: {
         "Monday - Friday": "10:00 AM - 11:00 PM",
         "Saturday - Sunday": "12:00 PM - 11:00 PM",
