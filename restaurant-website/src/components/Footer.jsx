@@ -7,7 +7,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold text-red-500 mb-4">Good Frickin' Hot Chicken</h3>
+            <div className="flex items-center mb-4">
+              <img
+                src="/logo.jpg"
+                alt="Good Frickin' Hot Chicken Logo"
+                className="h-12 w-12 mr-3 rounded-full object-cover"
+              />
+              <h3 className="text-2xl font-bold text-red-500">Good Frickin' Hot Chicken</h3>
+            </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Nashville's premier hot chicken destination. Serving up authentic flavors with 
               a modern twist since 2018.

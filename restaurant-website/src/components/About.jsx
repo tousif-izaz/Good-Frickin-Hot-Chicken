@@ -25,6 +25,13 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Story Section */}
         <div className="text-center mb-20">
+          <div className="flex justify-center mb-6">
+            <img
+              src="/logo.jpg"
+              alt="Good Frickin' Hot Chicken Logo"
+              className="h-20 w-20 rounded-full object-cover shadow-lg border-4 border-red-100"
+            />
+          </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-8">Our Story</h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

@@ -17,15 +17,6 @@ const OrderOnline = () => {
       deliveryFee: "$3.49",
       bgColor: "bg-red-500",
       textColor: "text-white"
-    },
-    {
-      name: "Grubhub",
-      logo: "https://img.logoipsum.com/244.svg",
-      url: "#",
-      estimatedTime: "35-45 min",
-      deliveryFee: "$2.49",
-      bgColor: "bg-orange-500",
-      textColor: "text-white"
     }
   ]
 

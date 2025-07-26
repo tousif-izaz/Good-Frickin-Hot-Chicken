@@ -76,6 +76,13 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
+          <div className="flex justify-center mb-6">
+            <img
+              src="/logo.jpg"
+              alt="Good Frickin' Hot Chicken Logo"
+              className="h-16 w-16 rounded-full object-cover border-2 border-red-500 shadow-lg"
+            />
+          </div>
           <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Have questions, feedback, or want to learn more about franchising? We'd love to hear from you!

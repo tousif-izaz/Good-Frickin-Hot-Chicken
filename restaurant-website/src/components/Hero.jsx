@@ -4,12 +4,19 @@ const Hero = () => {
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       
-      {/* Background image placeholder - you can replace this with actual food images */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
+      {/* Hero background image */}
+      <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center"></div>
       <div className="absolute inset-0 bg-red-900 bg-opacity-60"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        <div className="flex justify-center mb-6">
+          <img
+            src="/logo.jpg"
+            alt="Good Frickin' Hot Chicken Logo"
+            className="h-24 w-24 md:h-32 md:w-32 rounded-full object-cover border-4 border-white shadow-lg"
+          />
+        </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           Good Frickin' <span className="text-red-300">Hot Chicken</span>
         </h1>

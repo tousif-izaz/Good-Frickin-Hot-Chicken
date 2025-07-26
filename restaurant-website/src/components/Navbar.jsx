@@ -18,8 +18,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-red-600">Good Frickin' Hot Chicken</h1>
+            <div className="flex-shrink-0 flex items-center">
+              <img
+                src="/logo.jpg"
+                alt="Good Frickin' Hot Chicken Logo"
+                className="h-12 w-12 mr-3 rounded-full object-cover"
+              />
+              <h1 className="text-xl md:text-2xl font-bold text-red-600">Good Frickin' Hot Chicken</h1>
             </div>
           </div>
 
