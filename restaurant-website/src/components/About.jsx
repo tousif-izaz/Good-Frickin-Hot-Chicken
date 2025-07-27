@@ -35,8 +35,8 @@ const About = () => {
               </div>
               <div className="lg:order-first">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                  alt="Restaurant kitchen"
+                  src="/truck.jpg"
+                  alt="Good Frickin Hot Chicken Food Truck"
                   className="rounded-xl shadow-lg w-full h-96 object-cover"
                 />
               </div>

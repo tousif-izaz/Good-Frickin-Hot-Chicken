@@ -30,16 +30,32 @@ const StoreLocator = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Map Placeholder */}
+          {/* Google Map */}
           <div className="order-2 lg:order-1">
-            <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🗺️</div>
-                <p className="text-gray-600 text-lg">Interactive Google Map</p>
-                <p className="text-gray-500 text-sm mt-2">
-                  (Google Maps integration would be implemented here)
-                </p>
-              </div>
+            <div className="rounded-xl overflow-hidden shadow-lg h-96">
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=952%20Nord%20Ave,%20Chico,%20CA%2095926+(Good%20Frickin%20Hot%20Chicken)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Good Frickin Hot Chicken - 952 Nord Ave, Chico, CA"
+              ></iframe>
+            </div>
+            <div className="mt-4 text-center">
+              <a
+                href="https://maps.app.goo.gl/1D57aPPCC6sEex7p9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+              >
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                Open in Google Maps
+              </a>
             </div>
           </div>
 

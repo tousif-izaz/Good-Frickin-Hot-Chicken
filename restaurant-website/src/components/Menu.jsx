@@ -10,14 +10,14 @@ const Menu = () => {
         price: "Market Price",
         description: "Chicken slider with coleslaw, pickles, frickin sauce & fries",
         spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "https://images.unsplash.com/photo-1606755962773-d324e2e3f19c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: "/slider.jpg"
       },
       {
         name: "Double Sliders",
         price: "Market Price",
         description: "Two chicken sliders with coleslaw, pickles, frickin sauce & fries",
         spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "https://images.unsplash.com/photo-1619740455993-32c5d5705dea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: "/slider.jpg"
       }
     ],
     tenders: [
@@ -26,14 +26,14 @@ const Menu = () => {
         price: "Market Price",
         description: "Chicken tender with Texas bread coleslaw, pickles, frickin sauce & fries",
         spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: "/tenders.jpg"
       },
       {
         name: "Double Tenders",
         price: "Market Price",
         description: "Two chicken tenders with Texas bread coleslaw, pickles, frickin sauce",
         spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: "/tenders.jpg"
       }
     ],
     specialties: [
@@ -42,21 +42,21 @@ const Menu = () => {
         price: "Market Price",
         description: "Chicken slider & tender with Texas bread, coleslaw, pickles, frickin sauce & fries",
         spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: "/slider.jpg"
       },
       {
         name: "Frickin Loaded Fries",
         price: "Market Price",
         description: "Two chopped tenders with fries, coleslaw & frickin sauce",
         spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: "/loaded-fries.jpg"
       },
       {
         name: "Rice Bowl",
         price: "Market Price",
         description: "Two chopped tenders with rice, coleslaw & frickin sauce",
         spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "https://images.unsplash.com/photo-1588566565463-180a5b2090d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: "/loaded-fries.jpg"
       }
     ]
   }
