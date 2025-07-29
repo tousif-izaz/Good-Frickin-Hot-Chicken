@@ -3,18 +3,18 @@ const OrderOnline = () => {
     {
       name: "Uber Eats",
       logo: "https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg",
-      url: "#",
+      url: "https://www.ubereats.com/store/good-frickin-hot-chicken/WEYfzuJwX_mbCsih6xqI_A?msockid=3a51ff676b8a6d5a2463eb8f6a186cd7",
       estimatedTime: "25-35 min",
-      deliveryFee: "$2.99",
+      deliveryFee: "varies",
       bgColor: "bg-black",
       textColor: "text-white"
     },
     {
       name: "DoorDash",
-      logo: "https://img.logoipsum.com/243.svg",
-      url: "#",
+      logo: "https://tse1.mm.bing.net/th/id/OIP.U6BcwosycN9N7WOesvICDQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
+      url: "https://www.doordash.com/store/good-frickin-hot-chicken-chico-34409647/70049547/",
       estimatedTime: "30-40 min",
-      deliveryFee: "$3.49",
+      deliveryFee: "varies",
       bgColor: "bg-red-500",
       textColor: "text-white"
     }
@@ -31,7 +31,7 @@ const OrderOnline = () => {
         </div>
 
         {/* Delivery Partners */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
           {deliveryPartners.map((partner, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className={`${partner.bgColor} ${partner.textColor} p-6 text-center`}>
@@ -62,28 +62,27 @@ const OrderOnline = () => {
             Skip the delivery fees and order directly from us for pickup
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300">
+            <a 
+              href="tel:+15307209699"
+              className="bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300 inline-block text-center"
+              onClick={(e) => {
+                // Fallback for copying to clipboard if tel: doesn't work
+                if (!navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i)) {
+                  e.preventDefault();
+                  navigator.clipboard.writeText('(530) 720-9699').then(() => {
+                    alert('Phone number copied to clipboard: (530) 720-9699');
+                  });
+                }
+              }}
+            >
               📞 Call to Order: (530) 720-9699
-            </button>
+            </a>
             <button className="bg-red-800 hover:bg-red-900 text-white font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300">
               🛒 Order for Pickup
             </button>
           </div>
         </div>
 
-        {/* Special Offers */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-r from-red-800 to-red-600 rounded-xl p-6 text-center">
-            <h4 className="text-2xl font-bold mb-2">🔥 First Order Special</h4>
-            <p className="text-red-100 mb-4">Get 20% off your first online order</p>
-            <p className="text-sm text-red-200">Use code: FIRSTHEAT</p>
-          </div>
-          <div className="bg-gradient-to-r from-yellow-600 to-orange-500 rounded-xl p-6 text-center">
-            <h4 className="text-2xl font-bold mb-2">⚡ Fast Pickup</h4>
-            <p className="text-yellow-100 mb-4">Order ahead for lightning fast pickup</p>
-            <p className="text-sm text-yellow-200">Ready in 15 minutes or less</p>
-          </div>
-        </div>
 
         {/* Hours */}
         <div className="mt-16 text-center">

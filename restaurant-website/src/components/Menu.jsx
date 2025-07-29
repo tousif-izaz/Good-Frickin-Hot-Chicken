@@ -7,56 +7,49 @@ const Menu = () => {
     sliders: [
       {
         name: "Single Slider",
-        price: "Market Price",
         description: "Chicken slider with coleslaw, pickles, frickin sauce & fries",
-        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "/slider.jpg"
+        spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
+        image: "/slider.PNG"
       },
       {
         name: "Double Sliders",
-        price: "Market Price",
         description: "Two chicken sliders with coleslaw, pickles, frickin sauce & fries",
-        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "/slider.jpg"
+        spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
+        image: "/double-sliders.PNG"
       }
     ],
     tenders: [
       {
         name: "Single Tender",
-        price: "Market Price",
         description: "Chicken tender with Texas bread coleslaw, pickles, frickin sauce & fries",
-        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "/tenders.jpg"
+        spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
+        image: "/tender.PNG"
       },
       {
         name: "Double Tenders",
-        price: "Market Price",
         description: "Two chicken tenders with Texas bread coleslaw, pickles, frickin sauce",
-        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "/tenders.jpg"
+        spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
+        image: "/double-tenders.PNG"
       }
     ],
     specialties: [
       {
         name: "Slider & Tender Combo",
-        price: "Market Price",
         description: "Chicken slider & tender with Texas bread, coleslaw, pickles, frickin sauce & fries",
-        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "/slider.jpg"
+        spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
+        image: "/slider+tender.jpeg"
       },
       {
         name: "Frickin Loaded Fries",
-        price: "Market Price",
         description: "Two chopped tenders with fries, coleslaw & frickin sauce",
-        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "/loaded-fries.jpg"
+        spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
+        image: "/loaded-fries.PNG"
       },
       {
         name: "Rice Bowl",
-        price: "Market Price",
         description: "Two chopped tenders with rice, coleslaw & frickin sauce",
-        spiceLevel: "Choose: Mild | Medium | Spicy | Extreme",
-        image: "/loaded-fries.jpg"
+        spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
+        image: "/rice-bowl.PNG"
       }
     ]
   }
@@ -73,7 +66,7 @@ const Menu = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Menu</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            From mild to wild, we've got the heat level that's right for you
+            From mild to extreme, we've got the heat level that's right for you
           </p>
         </div>
 
@@ -103,9 +96,8 @@ const Menu = () => {
             <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 bg-cover bg-center" style={{backgroundImage: `url(${item.image})`}}></div>
               <div className="p-6">
-                <div className="flex justify-between items-start mb-2">
+                <div className="mb-2">
                   <h3 className="text-xl font-bold text-gray-900">{item.name}</h3>
-                  <span className="text-2xl font-bold text-red-600">{item.price}</span>
                 </div>
                 <p className="text-gray-600 mb-3">{item.description}</p>
                 {item.spiceLevel && (

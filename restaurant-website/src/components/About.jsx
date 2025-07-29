@@ -16,16 +16,16 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="text-left">
-                <h3 className="text-2xl font-bold text-red-600 mb-6">From Nashville Streets to Your Plate</h3>
+                <h3 className="text-2xl font-bold text-red-600 mb-6">The First Hot Chicken Place in Chico</h3>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  It all started in 2018 when Chef Marcus Johnson had a simple mission: bring the most 
-                  authentic, mouth-watering hot chicken experience to Nashville and beyond. Growing up 
-                  in Music City, Marcus knew what real Nashville hot chicken should taste like.
+                  Welcome to Chico's first hot chicken destination, where flavor meets heat in ways you've 
+                  never experienced before. We started our journey in May 2026 with one simple mission: 
+                  to satisfy your fried chicken cravings like it has never been done before.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  After years of perfecting his secret spice blend and cooking techniques, Good Frickin' 
-                  Hot Chicken was born. We're not just another chicken restaurant – we're a celebration 
-                  of Nashville's rich culinary heritage with a modern twist that'll make your taste buds sing.
+                  At Good Frickin' Hot Chicken, we believe every customer deserves a personalized experience. 
+                  Get your order customized to your heat preferences - from mild to extreme - and enjoy every 
+                  single bite knowing it was crafted just for you.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Every piece of chicken is hand-breaded, seasoned with our signature spice blend, and 
@@ -55,7 +55,7 @@ const About = () => {
               <h4 className="text-xl font-bold text-gray-900 mb-4">Authentic Heat</h4>
               <p className="text-gray-600">
                 We never compromise on authenticity. Our spice blends are crafted using traditional 
-                Nashville methods passed down through generations.
+                Nashville methods.
               </p>
             </div>
             <div className="text-center">
@@ -74,7 +74,7 @@ const About = () => {
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Community Love</h4>
               <p className="text-gray-600">
-                We're more than a restaurant – we're part of the Nashville community, 
+                We're more than a restaurant – we're part of the Chico community, 
                 supporting local farmers and giving back whenever we can.
               </p>
             </div>
@@ -82,32 +82,6 @@ const About = () => {
         </div>
 
 
-        {/* Awards & Recognition */}
-        <div className="mt-20 bg-red-50 rounded-2xl p-8 md:p-12">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-8">Awards & Recognition</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-4xl mb-2">🏆</div>
-              <h4 className="font-bold text-gray-900">Best Hot Chicken</h4>
-              <p className="text-sm text-gray-600">Nashville Scene 2023</p>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">⭐</div>
-              <h4 className="font-bold text-gray-900">Top Rated</h4>
-              <p className="text-sm text-gray-600">Google Reviews 4.8/5</p>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">🌶️</div>
-              <h4 className="font-bold text-gray-900">Spiciest Menu</h4>
-              <p className="text-sm text-gray-600">Nashville Food Awards</p>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">📺</div>
-              <h4 className="font-bold text-gray-900">Featured On</h4>
-              <p className="text-sm text-gray-600">Food Network</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

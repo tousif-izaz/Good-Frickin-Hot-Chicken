@@ -119,12 +119,29 @@ const StoreLocator = () => {
                       </div>
 
                       <div className="mt-4 flex gap-3">
-                        <button className="flex-1 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300">
+                        <a
+                          href="https://maps.app.goo.gl/1D57aPPCC6sEex7p9"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300 text-center"
+                        >
                           Get Directions
-                        </button>
-                        <button className="flex-1 border border-red-600 text-red-600 hover:bg-red-50 font-semibold py-2 px-4 rounded-lg transition-colors duration-300">
+                        </a>
+                        <a
+                          href={`tel:+1${store.phone.replace(/\D/g, '')}`}
+                          className="flex-1 border border-red-600 text-red-600 hover:bg-red-50 font-semibold py-2 px-4 rounded-lg transition-colors duration-300 text-center"
+                          onClick={(e) => {
+                            // Fallback for copying to clipboard if tel: doesn't work
+                            if (!navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i)) {
+                              e.preventDefault();
+                              navigator.clipboard.writeText(store.phone).then(() => {
+                                alert(`Phone number copied to clipboard: ${store.phone}`);
+                              });
+                            }
+                          }}
+                        >
                           Call Store
-                        </button>
+                        </a>
                       </div>
                     </div>
                   )}

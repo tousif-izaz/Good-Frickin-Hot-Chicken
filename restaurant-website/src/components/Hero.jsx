@@ -1,12 +1,20 @@
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center bg-gradient-to-r from-red-900 to-red-700">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      {/* Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/hero_vid.mp4" type="video/mp4" />
+        <source src="/hero_vid_2.mp4" type="video/mp4" />
+      </video>
       
-      {/* Hero background image */}
-      <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center"></div>
-      <div className="absolute inset-0 bg-red-900 bg-opacity-60"></div>
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">

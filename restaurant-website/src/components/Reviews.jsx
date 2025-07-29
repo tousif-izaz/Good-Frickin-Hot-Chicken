@@ -4,66 +4,66 @@ const Reviews = () => {
   const [currentReview, setCurrentReview] = useState(0)
   const [filter, setFilter] = useState('recent')
 
-  // Mock Google Reviews data
+  // Real Google Reviews data
   const reviewsData = {
     recent: [
       {
         id: 1,
-        name: "Sarah Johnson",
-        rating: 5,
-        date: "2 days ago",
-        text: "Best hot chicken in Nashville! The Frickin' Inferno sandwich was absolutely perfect - just the right amount of heat with incredible flavor.",
-        avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b1a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+        name: "lim jahey",
+        rating: 4,
+        date: "Recent",
+        text: "The menu's streamlined approach is noteworthy. Upon placing my order, I was informed of a 15-minute preparation time, which is acceptable given the fresh preparation of the food. The \"spicy\" option offered a substantial level of heat; I may opt for the \"medium\" level on my next visit. I selected the combo meal, priced at $15, which included a chicken sandwich, a chicken tender on Texas toast, fries, and Special Sauce. The meal was exceptionally flavorful, and I would recommend this establishment."
       },
       {
         id: 2,
-        name: "Mike Rodriguez",
+        name: "alyssa G",
         rating: 5,
-        date: "5 days ago",
-        text: "Holy moly! This place lives up to its name. The chicken is frickin' hot and frickin' delicious. Will definitely be back!",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+        date: "Recent",
+        text: "Food taste great & staff is friendly! I tried the double sliders and fries combo, sandwiches were tasty. They have a regular spot and also are at the thursday night market."
       },
       {
         id: 3,
-        name: "Emily Chen",
-        rating: 4,
-        date: "1 week ago",
-        text: "Great atmosphere and even better chicken! The honey hot sandwich was amazing. Staff was super friendly too.",
-        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+        name: "Tim Burns",
+        rating: 5,
+        date: "Recent",
+        text: "Some of the best hot chicken sandwich I have ever had! Crisp spicy chicken with a nice cool coleslaw! Crispy tangy pickles to complement the heat! Good fast service! Always hot and fresh! Definitely crave this at least once a week! Keep up the good work!"
       },
       {
         id: 4,
-        name: "David Thompson",
+        name: "Faisal Nafees",
         rating: 5,
-        date: "1 week ago",
-        text: "I've tried hot chicken all over Nashville, and this place is definitely in my top 3. The spice levels are perfect and the sides are great too.",
-        avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+        date: "Recent",
+        text: "No.1 food point in chico. Good customer service. Good food in cheap prices. Good taste. I highly recommend that everyone visit this place."
       }
     ],
     topRated: [
       {
         id: 5,
-        name: "Jessica Williams",
+        name: "Justin W",
         rating: 5,
-        date: "2 weeks ago",
-        text: "Absolutely incredible! This is what hot chicken should be. Perfect crispy coating, juicy meat, and that heat hits just right. 10/10!",
-        avatar: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+        date: "Top Rated",
+        text: "While driving around Chico we found this little food truck in a gas station parking lot and decided to give it a try. The person working was very friendly and gave us the recommendation of the chicken sliders. I ordered one slider in the hot seasoning and one slider in the extreme. Hot was a good heat and the extreme lived up to its name. If you pass by this place and like hot chicken I would recommend giving it a try. The food is cooked to order and the fries and sauce are pretty solid as well."
       },
       {
         id: 6,
-        name: "Robert Brown",
+        name: "samir ali",
         rating: 5,
-        date: "3 weeks ago",
-        text: "Best damn chicken sandwich I've ever had! The service was quick, staff was amazing, and the food... chef's kiss! 🔥",
-        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+        date: "Top Rated",
+        text: "The Sandwich and fries are taste delicious 😋 and also they maintain the hygiene here. All over very good place to eat sandwich. Another good point is they sell halal food."
       },
       {
         id: 7,
-        name: "Amanda Davis",
+        name: "Michael Hall",
         rating: 5,
-        date: "1 month ago",
-        text: "Hands down the best hot chicken in town! The flavors are incredible and you can actually taste the quality ingredients. Highly recommend!",
-        avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+        date: "Top Rated",
+        text: "Had my first trip to good fricking, hot chicken and I have to say it was awesome. Very friendly service and the food is to die for highly recommended."
+      },
+      {
+        id: 8,
+        name: "Osirys Gonzalez",
+        rating: 5,
+        date: "Top Rated",
+        text: "Absolutely delicious. The chicken is so tender and crunchy and good. I honestly don't like coleslaw or burgers but these definitely made the cut. The mix of an amazing burger bun with chicken and amazing coleslaw was everything."
       }
     ]
   }
@@ -127,11 +127,11 @@ const Reviews = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
               <div className="flex items-center mb-6">
-                <img
-                  src={currentReviews[currentReview].avatar}
-                  alt={currentReviews[currentReview].name}
-                  className="w-16 h-16 rounded-full mr-4"
-                />
+                <div className="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mr-4">
+                  <span className="text-red-600 font-bold text-xl">
+                    {currentReviews[currentReview].name.charAt(0).toUpperCase()}
+                  </span>
+                </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">{currentReviews[currentReview].name}</h3>
                   <div className="flex items-center">
@@ -165,7 +165,7 @@ const Reviews = () => {
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-md mx-auto">
             <div className="flex items-center justify-center mb-4">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                src="https://www.gstatic.com/marketing-cms/assets/images/0f/9a/58f1d92b46069b4a8bdc556b612c/google-maps.webp=s48-fcrop64=1,00000000ffffffff-rw"
                 alt="Google"
                 className="w-8 h-8 mr-2"
               />
@@ -175,7 +175,7 @@ const Reviews = () => {
             <div className="flex justify-center mb-2">
               {renderStars(5)}
             </div>
-            <p className="text-gray-600">Based on 127+ reviews</p>
+            <p className="text-gray-600">Based on 80+ reviews</p>
           </div>
         </div>
       </div>
