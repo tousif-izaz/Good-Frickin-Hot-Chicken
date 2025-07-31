@@ -8,7 +8,7 @@ const About = () => {
           <div className="flex justify-center mb-6">
             <img
               src="/logo.jpg"
-              alt="Good Frickin' Hot Chicken Logo"
+              alt="Good Frickin Hot Chicken Logo"
               className="h-20 w-20 rounded-full object-cover shadow-lg border-4 border-red-100"
             />
           </div>
@@ -23,7 +23,7 @@ const About = () => {
                   to satisfy your fried chicken cravings like it has never been done before.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  At Good Frickin' Hot Chicken, we believe every customer deserves a personalized experience. 
+                  At Good Frickin Hot Chicken, we believe every customer deserves a personalized experience. 
                   Get your order customized to your heat preferences - from mild to extreme - and enjoy every 
                   single bite knowing it was crafted just for you.
                 </p>

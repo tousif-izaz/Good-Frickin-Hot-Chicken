@@ -21,10 +21,10 @@ const Navbar = () => {
             <div className="flex-shrink-0 flex items-center">
               <img
                 src="/logo.jpg"
-                alt="Good Frickin' Hot Chicken Logo"
+                alt="Good Frickin Hot Chicken Logo"
                 className="h-12 w-12 mr-3 rounded-full object-cover"
               />
-              <h1 className="text-xl md:text-2xl font-bold text-red-600">Good Frickin' Hot Chicken</h1>
+              <h1 className="text-xl md:text-2xl font-bold text-red-600">Good Frickin Hot Chicken</h1>
             </div>
           </div>
 

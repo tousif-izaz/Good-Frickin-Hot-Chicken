@@ -21,15 +21,15 @@ const Hero = () => {
         <div className="flex justify-center mb-6">
           <img
             src="/logo.jpg"
-            alt="Good Frickin' Hot Chicken Logo"
+            alt="Good Frickin Hot Chicken Logo"
             className="h-24 w-24 md:h-32 md:w-32 rounded-full object-cover border-4 border-white shadow-lg"
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          Good Frickin' <span className="text-red-300">Hot Chicken</span>
+          Good Frickin <span className="text-red-300">Hot Chicken</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Nashville-style hot chicken with frickin' amazing flavor that'll blow your mind
+          Nashville-style hot chicken with frickin amazing flavor that'll blow your mind
         </p>
         
         {/* CTA Buttons */}

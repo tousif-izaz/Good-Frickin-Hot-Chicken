@@ -4,7 +4,7 @@ const OrderOnline = () => {
       name: "Uber Eats",
       logo: "https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg",
       url: "https://www.ubereats.com/store/good-frickin-hot-chicken/WEYfzuJwX_mbCsih6xqI_A?msockid=3a51ff676b8a6d5a2463eb8f6a186cd7",
-      estimatedTime: "25-35 min",
+      estimatedTime: "25 min",
       deliveryFee: "varies",
       bgColor: "bg-black",
       textColor: "text-white"
@@ -13,7 +13,7 @@ const OrderOnline = () => {
       name: "DoorDash",
       logo: "https://tse1.mm.bing.net/th/id/OIP.U6BcwosycN9N7WOesvICDQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
       url: "https://www.doordash.com/store/good-frickin-hot-chicken-chico-34409647/70049547/",
-      estimatedTime: "30-40 min",
+      estimatedTime: "20 min",
       deliveryFee: "varies",
       bgColor: "bg-red-500",
       textColor: "text-white"
@@ -90,16 +90,20 @@ const OrderOnline = () => {
           <div className="bg-gray-800 rounded-xl p-6 max-w-md mx-auto">
             <div className="space-y-2">
               <div className="flex justify-between">
-                <span>Monday - Thursday:</span>
-                <span>11:00 AM - 10:00 PM</span>
+                <span>Monday - Wednesday:</span>
+                <span>10:00 AM - 11:00 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Friday - Saturday:</span>
-                <span>11:00 AM - 11:00 PM</span>
+                <span>Thursday:</span>
+                <span>10:00 AM - 4:00 PM</span>
               </div>
               <div className="flex justify-between">
-                <span>Sunday:</span>
-                <span>12:00 PM - 9:00 PM</span>
+                <span>Friday:</span>
+                <span>10:00 AM - 11:00 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Saturday - Sunday:</span>
+                <span>12:00 PM - 11:00 PM</span>
               </div>
             </div>
           </div>
