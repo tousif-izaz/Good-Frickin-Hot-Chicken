@@ -19,7 +19,7 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-red-600 mb-6">The First Hot Chicken Place in Chico</h3>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                   Welcome to Chico's first hot chicken destination, where flavor meets heat in ways you've 
-                  never experienced before. We started our journey in May 2026 with one simple mission: 
+                  never experienced before. We started our journey in May 2025 with one simple mission: 
                   to satisfy your fried chicken cravings like it has never been done before.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
