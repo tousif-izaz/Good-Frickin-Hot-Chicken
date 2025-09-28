@@ -64,8 +64,9 @@ const About = () => {
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Quality First</h4>
               <p className="text-gray-600">
-                From sourcing the freshest local ingredients to hand-breading every piece, 
-                we're committed to excellence in every bite.
+                From sourcing the freshest local ingredients to hand-breading every piece,
+                we're committed to excellence in every bite. We proudly serve halal chicken
+                to ensure everyone can enjoy our delicious hot chicken.
               </p>
             </div>
             <div className="text-center">
