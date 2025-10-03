@@ -11,8 +11,7 @@ const StoreLocator = () => {
       phone: "(530) 720-9699",
       hours: {
         "Monday - Friday": "10:00 AM - 11:00 PM",
-        "Saturday - Sunday": "12:00 PM - 11:00 PM",
-        "Thursday": "10:00 AM - 4:00 PM"
+        "Saturday - Sunday": "12:00 PM - 11:00 PM"
       },
       features: ["Dine-in", "Takeout", "Delivery", "Parking Available"],
       coords: { lat: 36.1627, lng: -86.7816 }

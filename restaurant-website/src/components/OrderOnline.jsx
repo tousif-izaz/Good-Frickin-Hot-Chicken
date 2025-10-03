@@ -90,15 +90,7 @@ const OrderOnline = () => {
           <div className="bg-gray-800 rounded-xl p-6 max-w-md mx-auto">
             <div className="space-y-2">
               <div className="flex justify-between">
-                <span>Monday - Wednesday:</span>
-                <span>10:00 AM - 11:00 PM</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Thursday:</span>
-                <span>10:00 AM - 4:00 PM</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Friday:</span>
+                <span>Monday - Friday:</span>
                 <span>10:00 AM - 11:00 PM</span>
               </div>
               <div className="flex justify-between">

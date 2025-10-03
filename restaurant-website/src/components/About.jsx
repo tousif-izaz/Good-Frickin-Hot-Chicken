@@ -47,14 +47,14 @@ const About = () => {
         {/* Values Section */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">What We Stand For</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🔥</span>
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Authentic Heat</h4>
               <p className="text-gray-600">
-                We never compromise on authenticity. Our spice blends are crafted using traditional 
+                We never compromise on authenticity. Our spice blends are crafted using traditional
                 Nashville methods.
               </p>
             </div>
@@ -65,8 +65,16 @@ const About = () => {
               <h4 className="text-xl font-bold text-gray-900 mb-4">Quality First</h4>
               <p className="text-gray-600">
                 From sourcing the freshest local ingredients to hand-breading every piece,
-                we're committed to excellence in every bite. We proudly serve halal chicken
-                to ensure everyone can enjoy our delicious hot chicken.
+                we're committed to excellence in every bite.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <img src="/halal-logo.png" alt="Halal Certified" className="w-12 h-12" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-4">Halal Certified</h4>
+              <p className="text-gray-600">
+                We proudly serve halal chicken to ensure everyone can enjoy our delicious hot chicken.
               </p>
             </div>
             <div className="text-center">
@@ -75,7 +83,7 @@ const About = () => {
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Community Love</h4>
               <p className="text-gray-600">
-                We're more than a restaurant – we're part of the Chico community, 
+                We're more than a restaurant – we're part of the Chico community,
                 supporting local farmers and giving back whenever we can.
               </p>
             </div>
