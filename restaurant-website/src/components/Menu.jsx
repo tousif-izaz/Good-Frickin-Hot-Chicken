@@ -5,13 +5,13 @@ const Menu = () => {
         name: "Single Slider",
         description: "Chicken slider with coleslaw, pickles, frickin sauce & fries",
         spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
-        image: "/slider.PNG"
+        image: "/slider.jpeg"
       },
       {
         name: "Double Sliders",
         description: "Two chicken sliders with coleslaw, pickles, frickin sauce & fries",
         spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
-        image: "/double-sliders.PNG"
+        image: "/double-sliders.jpeg"
       }
     ],
     tenders: [
@@ -19,13 +19,13 @@ const Menu = () => {
         name: "Single Tender",
         description: "Chicken tender with Texas bread coleslaw, pickles, frickin sauce & fries",
         spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
-        image: "/tender.PNG"
+        image: "/tender.jpeg"
       },
       {
         name: "Double Tenders",
         description: "Two chicken tenders with Texas bread coleslaw, pickles, frickin sauce",
         spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
-        image: "/double-tenders.PNG"
+        image: "/double-tenders.jpeg"
       }
     ],
     specialties: [
@@ -39,13 +39,13 @@ const Menu = () => {
         name: "Frickin Loaded Fries",
         description: "Two chopped tenders with fries, coleslaw & frickin sauce",
         spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
-        image: "/loaded-fries.PNG"
+        image: "/loaded-fries.jpeg"
       },
       {
         name: "Rice Bowl",
         description: "Two chopped tenders with rice, coleslaw & frickin sauce",
         spiceLevel: "🟢 Mild | 🟡 Medium | 🔴 Spicy | 🔴🔴 Extreme",
-        image: "/rice-bowl.PNG"
+        image: "/rice-bowl.jpeg"
       }
     ]
   }
