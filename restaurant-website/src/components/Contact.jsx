@@ -196,7 +196,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Main Location</h4>
-                  <p className="text-gray-300">952 Nord Avenue<br />Chico, CA 95926</p>
+                  <p className="text-gray-300">2401 Esplanade<br />Chico, CA 95926</p>
                 </div>
               </div>
             </div>

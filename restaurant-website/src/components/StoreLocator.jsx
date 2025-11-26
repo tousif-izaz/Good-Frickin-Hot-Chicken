@@ -34,8 +34,8 @@ const StoreLocator = () => {
             <div className="rounded-xl overflow-hidden shadow-lg h-96">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.3095557235974!2d-121.86279448721359!3d39.75515767143497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808327ada2df7885%3A0x6ab0151c587b1ee2!2sGood%20Frickin%20Hot%20Chicken!5e0!3m2!1sen!2sus!4v1764129433309!5m2!1sen!2sus"
                width="600" height="450"
-                style="border:0;" allowfullscreen="" 
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                style={{ border: 0 }} allowFullScreen=""
+                loading="lazy" referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
             <div className="mt-4 text-center">
