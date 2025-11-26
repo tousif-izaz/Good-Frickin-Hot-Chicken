@@ -7,7 +7,7 @@ const StoreLocator = () => {
     {
       id: 1,
       name: "Chico Nord Ave",
-      address: "952 Nord avenue, chico 95926",
+      address: "2401 Esplanade, Chico, CA 95926",
       phone: "(530) 720-9699",
       hours: {
         "Monday - Friday": "10:00 AM - 11:00 PM",
@@ -33,16 +33,11 @@ const StoreLocator = () => {
           {/* Google Map */}
           <div className="order-2 lg:order-1">
             <div className="rounded-xl overflow-hidden shadow-lg h-96">
-              <iframe
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=952%20Nord%20Ave,%20Chico,%20CA%2095926+(Good%20Frickin%20Hot%20Chicken)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Good Frickin Hot Chicken - 952 Nord Ave, Chico, CA"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.3095557235974!2d-121.86279448721359!3d39.75515767143497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808327ada2df7885%3A0x6ab0151c587b1ee2!2sGood%20Frickin%20Hot%20Chicken!5e0!3m2!1sen!2sus!4v1764129433309!5m2!1sen!2sus"
+               width="600" height="450"
+                style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
             <div className="mt-4 text-center">
               <a
