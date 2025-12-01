@@ -6,7 +6,7 @@ const StoreLocator = () => {
   const stores = [
     {
       id: 1,
-      name: "Chico Nord Ave",
+      name: "Chico",
       address: "2401 Esplanade, Chico, CA 95926",
       phone: "(530) 720-9699",
       hours: {
